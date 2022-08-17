@@ -31,13 +31,19 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'django_non_dark_admin',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    'blog.apps.BlogConfig',
 ]
+
+DISABLE_DARK_MODE = True
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
