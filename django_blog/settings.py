@@ -31,6 +31,12 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+
+    # Own apps
+    'blog.apps.BlogConfig',
+    'users.apps.UsersConfig',
+    
+    # Outher modules
     'django_non_dark_admin',
 
     'django.contrib.admin',
@@ -39,8 +45,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
-    'blog.apps.BlogConfig',
 ]
 
 DISABLE_DARK_MODE = True
