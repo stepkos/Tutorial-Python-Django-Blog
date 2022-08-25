@@ -30,6 +30,8 @@ class PostListView(ListView):
     # Order records "-"" mean desc
     ordering = ['-date_posted']
 
+    paginate_by = 5
+
 
 class PostDetailView(DetailView):
     model = Post
